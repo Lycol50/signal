@@ -15,6 +15,6 @@ RUN --mount=type=cache,target=/root/.npm npm install -global serve@latest
 
 COPY --from=builder /code/dist .
 
-EXPOSE 6000
+EXPOSE 3001
 
 CMD [ "serve" ]
