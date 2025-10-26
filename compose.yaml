@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "6000:6000"
+      - "3001:3001"
     environment:
       - NODE_ENV=production
-      - PORT=6000
+      - PORT=3001
