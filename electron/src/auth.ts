@@ -8,7 +8,7 @@ const authURL = (redirectUri: string) => {
 
   return app.isPackaged
     ? `https://signalmidi.app/auth?${parameter}`
-    : `http://localhost:6000/auth?${parameter}`
+    : `http://localhost:3001/auth?${parameter}`
 }
 
 export const signInWithBrowser = async (): Promise<FirebaseCredential> => {
